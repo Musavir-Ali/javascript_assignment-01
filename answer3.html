@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Greeting</h2>
+
+<p>Enter your name:</p>
+
+<input type="text" id="name">
+<button onclick="sayHello()">Submit</button>
+
+<p id="greeting"></p>
+
+<script>
+  function sayHello() {
+    // Get the value of the input field
+    var name = document.getElementById("name").value;
+
+    // Display the greeting
+    document.getElementById("greeting").innerHTML = "Hello, " + name + "!";
+  }
+</script>
+
+</body>
+</html>

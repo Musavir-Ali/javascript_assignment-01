@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Marks Calculator</h2>
+
+<p>Enter the names of the subjects:</p>
+
+<input type="text" id="subject1">
+<input type="text" id="subject2">
+<input type="text" id="subject3">
+<button onclick="storeSubjects()">Submit</button>
+
+<p>Enter the obtained marks for the first subject:</p>
+
+<input type="text" id="marks1">
+<button onclick="storeMarks()">Submit</button>
+
+<script>
+  // Store the subject names in variables
+  function storeSubjects() {
+    var subject1 = document.getElementById("subject1").value;
+    var subject2 = document.getElementById("subject2").value;
+    var subject3 = document.getElementById("subject3").value;
+  }
+
+  // Store the obtained marks and total marks for the first subject in variables
+  function storeMarks() {
+    var marks1 = document.getElementById("marks1").value;
+    var totalMarks = 100;
+  }
+</script>
+
+</body>
+</html>

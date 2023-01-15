@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Multiplication Table</h2>
+
+<p>Enter a number:</p>
+
+<input type="text" id="num">
+<button onclick="showTable()">Submit</button>
+
+<p id="table"></p>
+
+<script>
+  function showTable() {
+    // Get the value of the input field
+    var num = document.getElementById("num").value;
+
+    // If no value is entered, use 5 as the default
+    if (num == "") {
+      num = 5;
+    }
+
+    // Generate the multiplication table
+    var table = "";
+    for (var i = 1; i <= 10; i++) {
+      table += num + " x " + i + " = " + (num * i) + "<br>";
+    }
+
+    // Display the table
+    document.getElementById("table").innerHTML = table;
+  }
+</script>
+
+</body>
+</html>

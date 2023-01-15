@@ -1,0 +1,25 @@
+<!--
+ "a" will be 1, because the value of a is decremented by 1 using the -- operator before it is used in the expression.
+ "b" will be 1, because the value of b is decremented by 1 using the -- operator before it is used in the expression, but then it is incremented by 1 using the ++ operator.
+ result will be 3, because the expression will be evaluated as follows:
+"--a" is 1, because the value of a is decremented by 1 before it is used in the expression.
+"--a" - "--b" is 1, because the value of b is decremented by 1 before it is used in the expression.
+"--a" - "--b" + "++b" is 2, because the value of b is incremented by 1 before it is used in the expression.
+"--a" - "--b" + "++b" + "b--"" is 3, because the value of b is used in the expression before it is decremented by 1.
+So, the final values of the variables will be a = 1, b = 1, and result = 3. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>a = 1</p> <br>
+    <p>b = 1</p><br>
+    <p>result = 3</p>
+</body>
+</html>
+
